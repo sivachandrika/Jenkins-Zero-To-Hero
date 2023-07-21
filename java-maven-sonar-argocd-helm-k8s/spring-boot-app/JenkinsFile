@@ -1,7 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'sivachandrika/maven-sivachandrika-docker-agent:v1'
+      //image 'sivachandrika/maven-sivachandrika-docker-agent:v1'
+      image 'sivachandrika/ubuntu:latest'
       //args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
